@@ -46,7 +46,16 @@ main {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  box-shadow: 1px 9px 30px 0px hsl(241, 100%, 89%);
+  box-shadow:6px 12px 30px 0px hsl(241, 100%, 89%, 0.2);
+}
+@media (max-width:443px) {
+  body{
+    align-items: start;
+  }
+  .card{
+    grid-template-columns: 1fr;
+    width: min(100% , 17rem);
+  }
 }
 
 /* RESULT  */
@@ -87,6 +96,7 @@ main {
   margin: 1rem auto;
 }
 
+
 .big {
   font-size: 2.5rem;
   font-weight: bold;
@@ -104,8 +114,9 @@ main {
 }
 .card__summary-stats {
   display: grid;
-  align-items: center;
-  margin-bottom: 1rem;
+  gap: .5rem;
+  align-items: start;
+  margin-block: 1rem;
 }
 .card__summary-stat {
   display: flex;
@@ -114,6 +125,13 @@ main {
   font-size: 0.8rem;
   font-weight: bold;
   border-radius: 0.3rem;
+}
+.flex-group{
+  display: flex;
+  gap: .4rem;
+}
+.card__summary-stat-value{
+  color: black;
 }
 
 .card__summary-button {
@@ -124,11 +142,11 @@ main {
   color: white;
   background: none;
   background-color: var(--color-dark-gray-blue);
-  transition: background-color 0.3s ease;
+  /* transition: background-color 0.3s ease; */
   cursor: pointer;
 }
-.card__summary-button:hover , .card__summary-button:focus-visible {
-  background-color: transparent;
+.card__summary-button:hover ,  .card__summary-button:active {
+  /* background-color: transparent; */
   background-image: linear-gradient(
     to bottom,
     hsl(252, 100%, 67%),
@@ -144,24 +162,30 @@ main {
 .b-r {
   border-radius: 1.1rem;
 }
+@media (max-width:443px) {
+  .card__result .b-r , .card .b-r{
+    border-top-left-radius: 0 ;
+    border-top-right-radius: 0 ;
+  }
+}
 .gray-text {
   color: var(--color-light-lavender);
 }
 
 .bg-red {
   color: var(--color-light-red);
-  background: hsla(0, 100%, 67%, 0.075);
+  background: hsla(0, 100%, 67%, 0.040);
 }
 .bg-orange {
   color: var(--color-orangey-yellow);
-  background: hsl(39, 100%, 56%, 0.075);
+  background: hsl(39, 100%, 56%, 0.040);
 }
 .bg-green {
   color: var(--color-green-teal);
-  background: hsl(166, 100%, 37%, 0.075);
+  background: hsl(166, 100%, 37%, 0.040);
 }
 
 .bg-blue {
   color: var(--color-cobalt-blue);
-  background: hsl(234, 85%, 45%, 0.075);
+  background: hsl(234, 85%, 45%, 0.040);
 }
