@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
- 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Results summary component</title>
 
-  Your Result
-  76
-  of 100
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="card b-r">
+        <div class="card__result p b-r">
+          <h1 class="card__result-title gray-text">Your Result</h1>
+          <div class="card__result-stats">
+            <p class="big">76</p>
+            <p class="gray-text">of 100</p>
+          </div>
+          <div class="card__result-feedback">
+            <p class="card__result-feedback-title">Great</p>
+            <p class="card__result-feedback-text gray-text">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <div class="card__summary p b-r">
+          <p class="card__summary-title">Summary</p>
+          <div class="card__summary-stats">
+            <div class="card__summary-stat bg-red">
+              <p class="card__summary-stat-title">Reaction</p>
+              <p class="card__summary-stat-value">80 / 100</p>
+            </div>
+            <div class="card__summary-stat bg-orange">
+              <p class="card__summary-stat-title">Memory</p>
+              <p class="card__summary-stat-value">92 / 100</p>
+            </div>
+            <div class="card__summary-stat bg-green">
+              <p class="card__summary-stat-title">Verbal</p>
+              <p class="card__summary-stat-value">61 / 100</p>
+            </div>
+            <div class="card__summary-stat bg-blue">
+              <p class="card__summary-stat-title">Visual</p>
+              <p class="card__summary-stat-value">72 / 100</p>
+            </div>
+          </div>
+          <button class="card__summary-button">Continue</button>
+        </div>
+      </div>
+    </main>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>
