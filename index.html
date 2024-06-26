@@ -17,11 +17,13 @@
     <link rel="stylesheet" href="reset.css" />
   </head>
   <body>
-    <main class="main">
+    <main class="main" role="main">
       <div class="card b-r">
-        <div class="card__result p b-r">
-          <h1 class="card__result-title gray-text">Your Result</h1>
-          <div class="card__result-stats">
+        <div class="card__result p b-r" aria-labelledby="result-title">
+          <h1 id="result-title" class="card__result-title gray-text">
+            Your Result
+          </h1>
+          <div class="card__result-stats" aria-live="polite">
             <p class="big">76</p>
             <p class="gray-text">of 100</p>
           </div>
@@ -34,11 +36,20 @@
           </div>
         </div>
         <div class="card__summary p b-r">
-          <p class="card__summary-title">Summary</p>
+          <p
+            id="summary-title"
+            class="card__summary-title"
+            aria-labelledby="summary-title"
+          >
+            Summary
+          </p>
           <div class="card__summary-stats">
             <div class="card__summary-stat bg-red">
               <div class="flex-group">
-                <img src="./assets/images/icon-Reaction.svg" alt="" />
+                <img
+                  src="./assets/images/icon-Reaction.svg"
+                  aria-hidden="true"
+                />
                 <p>Reaction</p>
               </div>
               <p class="card__summary-stat-value">
@@ -47,7 +58,7 @@
             </div>
             <div class="card__summary-stat bg-orange">
               <div class="flex-group">
-                <img src="./assets/images/icon-Memory.svg" alt="" />
+                <img src="./assets/images/icon-Memory.svg" aria-hidden="true" />
                 <p>Memory</p>
               </div>
               <p class="card__summary-stat-value">
@@ -56,7 +67,7 @@
             </div>
             <div class="card__summary-stat bg-green">
               <div class="flex-group">
-                <img src="./assets/images/icon-Verbal.svg" alt="" />
+                <img src="./assets/images/icon-Verbal.svg" aria-hidden="true" />
                 <p>Verbal</p>
               </div>
               <p class="card__summary-stat-value">
@@ -65,7 +76,7 @@
             </div>
             <div class="card__summary-stat bg-blue">
               <div class="flex-group">
-                <img src="./assets/images/icon-Visual.svg" alt="" />
+                <img src="./assets/images/icon-Visual.svg" aria-hidden="true" />
                 <p>Visual</p>
               </div>
               <p class="card__summary-stat-value">
@@ -73,7 +84,12 @@
               </p>
             </div>
           </div>
-          <button class="card__summary-button">Continue</button>
+          <button
+            class="card__summary-button"
+            aria-label="Continue to the next step"
+          >
+            Continue
+          </button>
         </div>
       </div>
     </main>
@@ -82,7 +98,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://www.frontendmentor.io/profile/nuraf9607">Abdur Rahman</a>.
     </footer>
   </body>
 </html>

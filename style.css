@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-  /* Layout */
-  --mobile-width: 375px;
-  --desktop-width: 1440px;
-
   /* Colors */
   /* Primary */
   --color-light-red: hsl(0, 100%, 67%);
@@ -153,6 +149,9 @@ main {
     hsl(241, 81%, 54%)
   );
 
+}
+footer{
+  padding-inline: 2rem;
 }
 /* Shared Style */
 
