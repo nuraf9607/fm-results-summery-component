@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/nuraf9607/fm-results-summery-component)
-- Live Site URL: [Add live site URL here](https://nuraf9607.github.io/fm-results-summery-component/)
+- Solution URL: [Solution](https://github.com/nuraf9607/fm-results-summery-component)
+- Live Site URL: [Live Site](https://nuraf9607.github.io/fm-results-summery-component/)
 
 ## My process
 
