@@ -69,7 +69,7 @@ In future, I am considering to learn more about Web accessibility, more CSS prop
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/nuraf9607)
-- Twitter - [@yourusername](https://x.com/theAbdurRahman1)
+- Frontend Mentor - [@nuraf9607](https://www.frontendmentor.io/profile/nuraf9607)
+- Twitter - [@theAbdurRahman1](https://x.com/theAbdurRahman1)
 
 
